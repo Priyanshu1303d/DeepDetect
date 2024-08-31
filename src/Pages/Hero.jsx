@@ -27,7 +27,7 @@ const Hero = () => {
       }
     );
 
-    // Typewriter effect with infinite loop
+
     const typewriter = gsap.timeline({ repeat: -1, repeatDelay: 3 });
 
     typewriter
