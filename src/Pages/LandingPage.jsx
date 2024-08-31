@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import eyeImage from "../assets/eye.jpg";
-import bgImage from "../assets/bg.jpg";
+import bgImage from "../assets/face.jpg";
 
 function LandingPage() {
 
@@ -13,11 +13,12 @@ function LandingPage() {
     <div 
       data-scroll 
       data-scroll-speed="-.3" 
-      className="w-full h-screen bg-zinc-900 pt-1"
+      className="w-full h-screen bg-zinc-900 pt-1 "
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${eyeImage})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
+        opacity: 0.5,
       }}
     >
       <div className="textstructure mt-52 px-20">
@@ -31,12 +32,12 @@ function LandingPage() {
                     animate={{ width: "10vw" }} 
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }} 
                     className="mr-5 mt-[14px] w-[7vw] rounded-md h-[9vw] bg-cover object-fit" 
-                    style={{ backgroundImage: `url(${eyeImage})` }} 
+                    style={{ backgroundImage: `url(${bgImage})`}} 
                     relative="-top-[0.5vw]"
                   ></motion.div>
                 )}
                 
-                <h1 className='flex h-full items-center uppercase leading-[6vw] tracking-tighter text-[#94928D] text-[7vw] font-["gilroy"] font-medium'>
+                <h1 className='flex h-full items-center uppercase leading-[6vw] tracking-tighter text-[#ffffff] text-[7vw] font-["gilroy"] font-medium'>
                   {item}
                 </h1>
               </div>
@@ -44,9 +45,7 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className="border-t-[2px] border-zinc-600 mt-20 flex justify-between items-center py-5 px-20">
-        {/* Other content */}
-      </div>
+
     </div>
   );
 }

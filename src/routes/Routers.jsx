@@ -7,6 +7,7 @@ import FeedBack from '../Pages/FeedBack';
 const Routers = () => {
   return <Routes>
     <Route path="/home" element={<Home />} />
+    <Route path="/" element={<Home />} />
     <Route path="/detection" element={<Detection />} />
     <Route path="/feedback" element={<FeedBack />} />
     <Route path="/contact" element={<ContactUs />} />

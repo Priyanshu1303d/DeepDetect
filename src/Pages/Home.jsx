@@ -25,7 +25,6 @@ const Home = () => {
   return <>
         <Hero />
         <DetectFake />
-
         <Highlights />
   </>;
 };
