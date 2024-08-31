@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import LoadingScreen from '../Components/LoadingScreen';
 import Hero from './Hero';
 import DetectFake from '../Components/DetectFake';
+
 import Highlights from '../Components/HighLights';
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
   return <>
         <Hero />
         <DetectFake />
+
         <Highlights />
   </>;
 };
