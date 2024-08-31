@@ -16,6 +16,11 @@ export default {
         },
         zinc: "#101010",
       },
+      fontFamily: {
+        'modista': ['Modista', 'sans-serif'],
+        'kingsville': ['Kingsville', 'sans-serif'],
+
+      },
     },
   },
   plugins: [],
