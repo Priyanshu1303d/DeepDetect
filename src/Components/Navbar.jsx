@@ -32,7 +32,7 @@ function Navbar() {
           <Link 
             key={index} 
             to={`/${item.replace(/\s+/g, '').toLowerCase()}`} 
-            className={`text-lg capitalize font-light ${index === 3 && "ml-32"}`}
+            className={`text-lg capitalize font-kingsville ${index === 3 && "ml-32"}`}
           >
             {item}
           </Link>

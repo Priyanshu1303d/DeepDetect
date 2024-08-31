@@ -37,7 +37,7 @@ function LandingPage() {
                   ></motion.div>
                 )}
                 
-                <h1 className='flex h-full items-center uppercase leading-[6vw] tracking-tighter text-[#ffffff] text-[7vw] font-["gilroy"] font-medium'>
+                <h1 className='flex h-full items-center uppercase leading-[6vw] tracking-tighter text-[#ffffff] text-[7vw] font-modista font-medium'>
                   {item}
                 </h1>
               </div>
