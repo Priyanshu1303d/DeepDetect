@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
 import Footer from '../Components/Footer';
-import Home from '../Pages/Home';
-import Routers from '../routes/Routers'
+import Routers from '../routes/Routers';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const Layout = () => {
-  return <>
-    <Home />
-    <main>
-      <Routers />
-      
-    </main>
-    <Footer />
-  </>
+  return (
+    <Router>
+      <main>
+        <Routers />
+      </main>
+      <Footer />
+    </Router>
+  );
 }
 
-export default Layout
+export default Layout;
