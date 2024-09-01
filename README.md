@@ -2,9 +2,9 @@
 
 The **DeepDetect** is a web application designed to detect deepfake content using advanced machine learning algorithms. This project aims to provide an efficient and accurate tool for identifying manipulated media, contributing to the fight against misinformation and ensuring the integrity of digital content.
 
-![One](./public/one.jpg)
-![Two](./public/two.jpg)
-![Third](./public/third.jpg)
+![One](./public/one.png)
+![Two](./public/two.png)
+![Third](./public/third.png)
 
 ## Live Demo
 
