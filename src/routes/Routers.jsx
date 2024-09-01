@@ -8,7 +8,7 @@ import Insights from '../Pages/Insights';
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/detection" element={<Detection />} />
       <Route path="/feedback" element={<FeedBack />} />
       <Route path="/contact" element={<ContactUs />} />
