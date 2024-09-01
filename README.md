@@ -1,15 +1,15 @@
 # DeepDetect
 
-![Deepfake Detection Banner](https://your-image-url.com/banner.png)
-
-## Overview
-
 The **DeepDetect** is a web application designed to detect deepfake content using advanced machine learning algorithms. This project aims to provide an efficient and accurate tool for identifying manipulated media, contributing to the fight against misinformation and ensuring the integrity of digital content.
 
+![One](./public/one.jpg)
+![Two](./public/two.jpg)
+![Third](./public/third.jpg)
 
 ## Live Demo
 
-Check out the live demo: [DeepDetect Live](https://your-live-demo-url.com)
+Check out the live demo: [DeepDetect Live](https://deep-detect.vercel.app/)
+- Click on Home
 
 ### Table of Contents
 
@@ -32,7 +32,7 @@ Check out the live demo: [DeepDetect Live](https://your-live-demo-url.com)
 ## Technologies Used
 
 - **Frontend**: React.js, Vite, Tailwind CSS, GSAP, Three.js
-- **Machine Learning**: TensorFlow, PyTorch, opencv-python ,fastapi
+- **Machine Learning**: TensorFlow, PyTorch, opencv-python, fastapi
 
 ## Installation
 
@@ -65,9 +65,5 @@ Upload the media content (images or videos) you want to analyze.
 Click the Detect button to start the analysis.
 View the results on the results page.
 
-
-### Environment Variables
-
-Create a `.env` file in the root directory and add the following:
 
 
