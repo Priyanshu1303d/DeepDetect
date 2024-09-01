@@ -17,6 +17,7 @@
     "@react-three/drei": "^9.111.4",
     "@react-three/fiber": "^8.17.6",
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
     "deepfake-detection": "file:",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.3.31",
