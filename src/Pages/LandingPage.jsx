@@ -18,6 +18,7 @@ function LandingPage() {
         backgroundImage: `url(${eyeImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        
         opacity: 0.5,
       }}
     >
@@ -31,13 +32,13 @@ function LandingPage() {
                     initial={{ width: 0 }} 
                     animate={{ width: "10vw" }} 
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }} 
-                    className="mr-5 mt-[14px] w-[7vw] rounded-md h-[9vw] bg-cover object-fit" 
+                    className="mr-5 mt-[14px] w-[5vw] rounded-md h-[7vw] bg-cover object-fit" 
                     style={{ backgroundImage: `url(${bgImage})`}} 
                     relative="-top-[0.5vw]"
                   ></motion.div>
                 )}
                 
-                <h1 className='flex h-full items-center uppercase leading-[6vw] tracking-tighter text-[#ffffff] text-[7vw] font-modista font-medium'>
+                <h1 className='flex h-full pt-3 items-center uppercase leading-[6vw] tracking-tightest text-[#ffffff] text-[6vw] font-modista font-medium'>
                   {item}
                 </h1>
               </div>
