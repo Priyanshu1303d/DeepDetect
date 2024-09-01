@@ -5,7 +5,7 @@ import * as THREE from 'three'
 
 const MacContainer = () => {
     let model = useGLTF("../assets/mac.glb");
-    let tex = useTexture("../assets/eyee.jpg");
+    let tex = useTexture("../assets/ins.jpg");
     let meshes = {};
     model.scene.traverse((e)=>{
         meshes[e.name] = e;
@@ -23,7 +23,7 @@ const MacContainer = () => {
     })
 
   return (
-    <group position={[0, -10 , 20]}>
+    <group position={[20, -10 , 20]}>
         <primitive object={model.scene} />
     </group>
   )

@@ -2,12 +2,14 @@ import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import contentVideo from '../assets/content.mp4';
 
+
 function DetectFake() {
   const cards = [useAnimation(), useAnimation()];
 
   const handleHover = (index) => {
     cards[index].start({ y: "0" });
   };
+  
   const handleHoverEnd = (index) => {
     cards[index].start({ y: "100%" });
   };
@@ -19,14 +21,14 @@ function DetectFake() {
           Spotting deepfakes: harder than spotting a unicorn!
         </h1>
       </div>
-      <div className="px-20">
-        <div className="cards w-full flex gap-10 mt-5">
+      <div className="px-20 pt-20 rounded-xl">
+        <div className="cards w-full flex gap-10 mt-5 ">
           <motion.div
             onHoverStart={() => handleHover(0)}
             onHoverEnd={() => handleHoverEnd(0)}
-            className="cardcontainer relative w-1/2 h-[75vh]"
+            className="cardcontainer relative w-1/2 h-[75vh] shadow-box"
           >
-            <h1 className="absolute flex overflow-hidden text-[#FFD700] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-9xl font-['Neue_Montreal'] tracking-tight">
+            <h1 className="absolute flex overflow-hidden text-[#FFD700] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-9xl font-['Neue_Montreal'] tracking-tight ">
               {"REAL".split("").map((item, index) => (
                 <motion.span
                   key={index}
@@ -39,7 +41,7 @@ function DetectFake() {
                 </motion.span>
               ))}
             </h1>
-            <div className="card w-full h-full rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(255,215,0,0.5)]">
+            <div className="card w-full box-fake h-full rounded-xl overflow-hidden ">
               <video
                 className="w-full h-full object-cover"  
                 src={contentVideo}
@@ -53,7 +55,7 @@ function DetectFake() {
           <motion.div
             onHoverStart={() => handleHover(1)}
             onHoverEnd={() => handleHoverEnd(1)}
-            className="cardcontainer relative w-1/2 h-[75vh]"
+            className="cardcontainer relative w-1/2 h-[75vh] box-fake"
           >
             <h1 className="absolute flex overflow-hidden text-[#FFD700] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-9xl font-['Neue_Montreal'] tracking-tight">
               {"FAKE".split("").map((item, index) => (
@@ -68,7 +70,7 @@ function DetectFake() {
                 </motion.span>
               ))}
             </h1>
-            <div className="card w-full h-full rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(255,215,0,0.5)]">
+            <div className="card w-full h-full rounded-xl overflow-hidden shadow-box">
               <video
                 className="w-full h-full object-cover"  
                 src={contentVideo}
