@@ -57,7 +57,7 @@ Check out the live demo: [DeepDetect Live](https://deep-detect.vercel.app/)
     ```bash
    npm run dev
 
-Open your browser and navigate to http://localhost:3000 to view the application.
+Open your browser and navigate to /Home tab to view the application.
 
 ## Usage
 
