@@ -1,0 +1,68 @@
+Starting at the beginning of our journey, let's discuss ways of retrieving
+data from different data sources. So let's go over the learning
+goals for this section. In this section, we will cover retrieving data
+from multiple data sources, such as pulling from SQL databases, NoSQL databases, different
+APIs, as well as different Cloud data sources. With that we'll go over a lot of the practical issues
+that we want to keep in mind when pulling from these different
+data sources. So let's start off with
+reading in CSV files. CSV just stands for,
+Comma Separated Values, and that's going to consist of rows of data that are
+just separated by commas, or the values are just
+separated by commas. In Pandas, CSV files
+can typically be read using just a few lines of code, which you'll see here. The code that we have is, first we're going to
+import pandas as pd, which is just common practice. We're going to set the
+file path variable to the path for the CSV file. So here it's going to be
+in a folder called data, and the file is going to
+be called iris_data.csv. Then all we have
+to do is pass that into the pd.read_csv function. So we pass in our file path specifying where the file exists. We save the output
+of that as data, that's going to be
+the variable that now contains our
+Pandas DataFrame. When we print out
+the first five rows using data.iloc through five, this is the output
+that you see within your Jupyter notebook,
+with your sepal length, sepal width, petal
+length, petal width, as well as your species
+for the first five rows. Let's go over some useful
+arguments you may want to be aware of when working with
+the read_csv function. Right at the start, we see
+here if we are working with the tab separated file,
+we use pd.read_csv. We pass in our file path
+that we're trying to get to, and we can say what type of
+separator we want to use. So instead of using
+a comma or using /t, which is just going to be the Pythonic way
+of writing a tab. So it's a tab separated file. Maybe we have
+different delimiters and they are space separated. So maybe the spaces
+aren't the same size, and that's the way that each
+value is being separated. So instead of specifying
+a space or a tab, we can say anytime there is a whitespace using
+delim whitespace, then we have a new value. We also have the option
+to not use the first row or decide which row is actually going to be the header
+for our column names, as many of our CSV files may have blank columns
+right at the top. We'll also be able to specify
+our column names by setting in the argument names and passing in a list of the
+names of our columns, and we'll have to
+ensure that those are the same length as the actual
+columns of our DataFrame. Then finally we can
+specify which values should be brought
+in as null values. So here we have NA values, and maybe within our
+CSV file we have values that are strings that
+say NA or the value 99, and we know that
+those are errors. We can pass those in as
+blanks or null values. Now let's move on to JSON files. JSON just stands for
+JavaScript Object Notation, and those files are going
+to be a standard way to store data across platforms. You'll see them a lot
+for NoSQL databases, as well as pulling in
+from different APIs. They're meant to store
+information in an organized easy to access manner, and they should look similar
+to Python dictionaries, which I'll show you here. We have here with our example, the dictionary with the key
+and value pairs representing, this is just for one row, the key being the column name, and then the value just being that value for the first row, and that's how we
+see it's similar to the Python dictionary. In order to read any a JSON file, we're just going to use from Pandas the read_json function, and then we just have to
+pass in our file path. Similar to read CSV, there are going to be arguments. I would say that if you're having trouble pulling in
+your JSON files, I would start with looking
+at the audience arguments, and there's many
+different options, split, records, index, columns, values, and that will tell you how the JSON files
+actually organized. I would say look at the
+documentation there if you're having trouble
+reading on your JSON file. Then for the writing JSON files, all you have to do is data dot
+to underscore JSON, and that will output the file given the file
+name that you define.
